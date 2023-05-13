@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    background: white;
+    overflow-x: hidden;
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+    :root {
+    zoom: 0.8;
+    }}
+/*Nastavení menu*/
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin-right: 15px;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: width 0.25s ease-out;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+.menuham {
+    position: relative;
+    display: none;
+}
+
+#tel {
+    background-color: #187fba;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 100px;
+    color: aliceblue;
+}
+
+#tel:hover::before {
+    display: none;
+
+}
+
+/*Nastavení obrázků v menu*/
+.logo {
+    height: 2.3em;
+}
+
+.translation {
+    height: 1.2em;
+    transition: 0.4s;
+
+}
+
+.translation:hover {
+    height: 1.8em;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*Nastavení pozadí*/
+.background {
+    background-image: url(img/pozadi3.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.8px);
+}
+
+.motoplace {
+    width: 100%;
+}
+
+.moto {
+    position: relative;
+    top: -5.5em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 4.66rem;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.5px;
+    text-shadow: black 11px 13px 16px;
+}
+
+/*Nastavení produktů*/
+#introduce {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    top: -28em;
+    align-items: center;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+
+.card {
+    height: 454px;
+    border-radius: 20px;
+    margin: 20px;
+    width: 30em;
+    box-shadow: #0B3954 5px 5px 20px;
+    background: white;
+    text-align: center;
+
+}
+
+#intro1,
+#intro2,
+#intro3 {
+    text-align: justify;
+    padding-left: 2em;
+    font-size: 1.2em;
+}
+
+.introimage {
+    height: 15em;
+    margin-top: 21px;
+}
+
+
+/*about us*/
+
+.aboutus {
+    background-color: rgb(233, 233, 233);
+    position: relative;
+    top: -38em;
+    min-height: 30em;
+    padding: 30px;
+    text-align: center;
+   
+}
+
+#headlineaboutus {
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    margin-top: 4em;
+
+}
+
+.line {
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.line {
+    content: "";
+    position: relative;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 5px solid #78C0E0;
+    width: 78px;
+    border-radius: 10px;
+
+}
+
+.textaboutus{
+    width: 60%;
+    letter-spacing: 3px;    
+    position: relative;
+    left: 20%;
+    top: 0.5em;
+    font-size: 1.5em;
+    font-weight: 520;
+}
+
+/*nastavení formuláře*/
+
+.formular{
+    position: relative;
+    top: -34em;
+    left: 39%;
+    width: 45%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    gap: 1em;
+}
+
+input, select, textarea{
+    padding: 1.4em;
+    background: transparent;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 6em;
+}
+
+button{
+    width: 8em;
+    padding: 1em;
+    cursor: pointer;
+    background: #0B3954;
+    color: white;
+}
+
+/*Nastavení footer*/
+
+footer{
+    background: #0B3954;
+}
+
+.headlinefooter{
+text-align: center;
+font-size: 1em;
+min-height: 3em;
+padding-top: 1em;
+color: white;
+}
+
+
+article{
+    max-height: 83em;    
+}
+
+/*Nastavení pro tablet*/
+@media only screen and (min-width: 1040px) and (max-width: 1559px) {
+    #introduce {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        top: -18em;
+    }
+
+    
+article{
+    max-height: none;}
+    
+    .aboutus{
+        top:-13em;
+    }
+    #headlineaboutus{
+        margin-top: 2em;
+    }
+    .formular{
+        top:-6em;
+    }
+
+
+}
+
+/*Nastavení pro menší tablet*/
+@media only screen and (min-width: 781px) and (max-width: 1039px) {
+    #introduce {
+        top: -1em;
+    }
+    .aboutus{
+        top: 19em;
+    }
+
+    .formular{
+        top:22em;
+        left: 34%;
+    }
+
+    footer{
+        position: relative;
+        top:58em;
+    }
+    #headlineabouus{
+        margin-top: 2em;
+    }
+}
+
+/*Nastavení telefon*/
+
+@media only screen and (max-width:780px) {
+  
+nav .navigation{
+    display: none;
+}    
+article{
+    max-height: none;
+}
+    
+    .menuham {
+        position: absolute;
+        display: block;
+        font-size: 3em;
+        cursor: pointer;
+        transform: translateX(30px);
+        z-index: 10;
+        right: 40px;
+        bottom: 18px;
+    }
+
+    nav .translation {
+        margin-right: 2em;
+        height: 1.5em;
+    }
+
+    nav .navigation {
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+        left: 100%;
+
+    }
+
+    nav.open .navigation {
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        height: calc(100vh - 80px);
+        padding: 40px;
+        font-size: 1em;
+        border-top: 1px solid rgb(0, 0, 0, 0.05);
+
+    }
+    .background{
+        height: 543px;
+    }
+    .moto {
+        color: white;
+        top: -6.5em;
+        font-size: 3em;
+    }
+
+    .conteiner{
+        display: grid;
+    }
+    /*Introduce*/
+    .introimage {
+        height: 8em;
+        margin-top: 21px;
+    }
+
+    .card {
+        height: 378px;
+        margin: 13px;
+        width: 15.2em;
+        text-align: center;
+    }
+
+    #intro1,
+    #intro2,
+    #intro3 {
+        text-align: justify;
+        padding: 1em;
+        font-size: 1em;
+        width: 15em;
+    }
+
+    #introduce {
+        top: -7em;
+    }
+    #headlineaboutus{
+        margin-top: 1em;
+    }
+    .aboutus{
+        top:9em;
+    }
+
+    .formular {
+        position: relative;
+        top: 15em;
+        left: 7%;
+        width: 91%;
+    }
+
+    footer{
+        position: relative;
+        top:20em;
+    }
+}
